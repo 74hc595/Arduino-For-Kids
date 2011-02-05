@@ -76,7 +76,7 @@ ASCII art, it looked something like this:
     +------------------------+
     |                        |
     +------------------------+
-The area above the line was used for graphics output (the '^' represents the 
+The area above the line was used for graphics output (the caret represents the 
 turtle) and the area below the line was the "command center," basically, the
 Logo read-eval-print loop.
 
