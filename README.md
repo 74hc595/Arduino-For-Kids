@@ -45,9 +45,11 @@ this:
       delay(500);
     }
 Imagine teaching this to a seven-year-old. You'd have to explain the following:
+
 * variables
 * data types (i.e. what does "int" mean)?
 * for loops (including all three clauses)
+
 Even in a high-school programming class, it could take _days_ to cover those
 topics. Now, imagine if all you had to do was this:
     repeat 10 [led on wait 500 led off wait 500]
@@ -84,6 +86,7 @@ press Control-F to switch to the "flipside," a full-screen text editor.
 
 An environment like this could work for Arduino as well. All three components
 would be included:
+
 * a read-eval-print loop would let users immediately control the Arduino (via
   Firmata or something similar) without having to upload code
 * a full text editor (like the "flipside") where procedures can be written,
@@ -114,6 +117,8 @@ language still prevents a significant barrier to entry. Coupled with Logo, this
 barrier could be reduced to nearly zero.
 
 If you'd like to talk about this idea, I'm on Twitter: @autorelease
+
 Matt Sarnoff
+
 February 5, 2011
 
