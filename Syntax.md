@@ -1,6 +1,12 @@
 Syntax ideas
 ============
 
+Logo uses a quote to indicate variable names, and a colon to indicate variable
+values:
+    make "num 2
+    print :num
+Not sure if I want to keep this
+
 Pins would be treated as "objects" instead of regular integers
 
 You should be able to assign a pin to a name:
