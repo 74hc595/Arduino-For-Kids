@@ -1,25 +1,25 @@
-Syntax ideas?
-=============
+Syntax ideas
+============
 
 Pins would be treated as "objects" instead of regular integers
 
 You should be able to assign a pin to a name:
-    make &quot;button pin 11
-    make &quot;redLED pin 12
-    make &quot;greenLED pin 13
+    make "button pin 11
+    make "redLED pin 12
+    make "greenLED pin 13
 
 Instead of functions, send messages to pins
     pin 11 input
     pin 12 output
 
 Messages should return the pin object itself so they can be chained
-    make &quot;button pin 11 input
-    make &quot;redLED pin 12 output
-    make &quot;greenLED pin 13 output
+    make "button pin 11 input
+    make "redLED pin 12 output
+    make "greenLED pin 13 output
 
 Shorthand for assigning pins with mode:
-    make-input &quot;button pin 11
-    make-output &quot;redLED pin 12
+    make-input "button pin 11
+    make-output "redLED pin 12
 
 Instead of `digitalWrite()`:
     pin 12 on
@@ -70,20 +70,20 @@ Serial port is always initialized, at 9600 baud
     print (adds newline)
 
     waituntil [can-read?]
-    make &quot;value read-number
+    make "value read-number
     :blueLED set-brightness :value
 
 Fade example:
     to fade
-      make &quot;LED pin 9 output
-      make &quot;brightness 0
-      make &quot;fadeAmount 5
+      make "LED pin 9 output
+      make "brightness 0
+      make "fadeAmount 5
 
       loop [
         :LED set-value brightness
-        make &quot;brightness [:brightness + :fadeAmount]
+        make "brightness [:brightness + :fadeAmount]
         if :brightness = 0 or :brightness = 255
-          [make &quot;fadeAmount -fadeAmount]
+          [make "fadeAmount -fadeAmount]
         wait 30
       ]
     end
